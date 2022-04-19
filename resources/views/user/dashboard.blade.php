@@ -1,5 +1,7 @@
-<x-app-layout>
-    <x-slot name="headr">
-User Dashboard
-    </x-slot>
-</x-app-layout>
+
+@extends('layouts.app')
+
+
+@section('content')
+<h1>Hello User</h1>
+@endsection

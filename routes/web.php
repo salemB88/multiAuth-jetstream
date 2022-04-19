@@ -22,7 +22,7 @@ Route::get('/', [HomeController::class, 'checkUserType']);
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
-})->name('admin.dashboard');
+})->name('admin.dashboard')->middleware('auth', 'admin');
 
 Route::get('/user/dashboard', function () {
     return view('user.dashboard');
