@@ -19,7 +19,7 @@ class AdminMiddleware
   if(Auth::user()->userType==1){
       return $next($request);
   } else {
-      return redirect('/');
+           return abort(401);
   }
     }
 }
